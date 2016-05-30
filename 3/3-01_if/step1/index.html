@@ -21,7 +21,12 @@
 </div><!-- /.main-wrapper -->
 <footer>JavaScript Samples</footer>
 <script>
-console.log(window.confirm('ゲームスタート！準備OK？'));
+if (window.confirm('ゲームスタート！準備OK？')) {
+	console.log('ゲーム開始');
+}
+else {
+	console.log('ゲーム終了');
+}
 </script>
 </body>
 </html>
