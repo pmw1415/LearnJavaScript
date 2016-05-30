@@ -20,5 +20,23 @@
 </section>
 </div><!-- /.main-wrapper -->
 <footer>JavaScript Samples</footer>
+<script>
+/*
+ * @note
+ * 19時～21時ならお弁当30%OFF
+ * 9時台、15時台ならもう1個おまけ
+ * それ以外は「ご注文はお弁当ですか？」
+ */
+var hour = new Date().getHours();
+if (hour >= 19 && hour < 21) {
+	window.alert('お弁当30%OFF！');
+}
+else if (hour === 9 || hour === 15) {
+	window.alert('お弁当、1個買ったらもう1個おまけ！');
+}
+else {
+	window.alert('ご注文はお弁当ですか？');
+}
+</script>
 </body>
 </html>
