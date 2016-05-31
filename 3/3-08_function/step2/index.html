@@ -16,7 +16,9 @@
 </header>
 <div class="main-wrapper">
 <section>
-	<p id="output"></p>
+	<p id="output1"></p>
+	<p id="output2"></p>
+	<p id="output3"></p>
 </section>
 </div><!-- /.main-wrapper -->
 <footer>JavaScript Samples</footer>
@@ -27,8 +29,13 @@ var total = function(price) {
 	return price + price * tax;
 }
 
-console.log('コーヒーメーカーの値段は' + total(8000) + '円(税込)です。');
-document.getElementById('output').textContent = 'コーヒーメーカーの値段は' + total(8000) + '円(税込)です。';
+var priceCoffeeMaker = 8000;
+var priceCoffeeFilter = 200;
+var priceCoffeeBeans = 1000;
+//console.log('コーヒーメーカーの値段は' + total(8000) + '円(税込)です。');
+document.getElementById('output1').textContent = 'コーヒーメーカーの値段は' + total(priceCoffeeMaker) + '円(税込)です。';
+document.getElementById('output2').textContent = 'コーヒーフィルターの値段は' + total(priceCoffeeFilter) + '円(税込)です。';
+document.getElementById('output3').textContent = 'コーヒー豆の値段は' + total(priceCoffeeBeans) + '円(税込)です。';
 </script>
 </body>
 </html>
