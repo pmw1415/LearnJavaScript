@@ -31,14 +31,16 @@
 var enemy = 100;
 var attack;
 var AttackMax = 30;
+var count = 0;
 
 window.alert('戦闘スタート！');
 while (enemy > 0) {
 	attack = Math.floor(Math.random() * AttackMax) + 1;
 	enemy -= attack;
 	console.log('モンスターに' + attack + 'のダメージ！' + '\t: enemy_life = ' + enemy);
+	count++;
 }
-console.log('モンスターを倒した！');
+console.log(count + '回でモンスターを倒した！');
 </script>
 </body>
 </html>
