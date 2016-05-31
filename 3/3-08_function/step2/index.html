@@ -16,7 +16,7 @@
 </header>
 <div class="main-wrapper">
 <section>
-
+	<p id="output"></p>
 </section>
 </div><!-- /.main-wrapper -->
 <footer>JavaScript Samples</footer>
@@ -28,6 +28,7 @@ var total = function(price) {
 }
 
 console.log('コーヒーメーカーの値段は' + total(8000) + '円(税込)です。');
+document.getElementById('output').textContent = 'コーヒーメーカーの値段は' + total(8000) + '円(税込)です。';
 </script>
 </body>
 </html>
