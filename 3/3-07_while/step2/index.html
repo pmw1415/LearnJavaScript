@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>タイトル</h1>l
+<h2>サブタイトル</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script>
+/*
+ * @note
+ * (1)体力100のモンスターを倒す
+ * (2)プレイヤーの攻撃力は1回で30以下、毎回ランダムで決定する
+ * (3)プレイヤーの攻撃力の数値だけ、モンスターの体力を減らす
+ * (4)モンスターの体力が0以下になるまで、(2)～(3)を繰り返す。
+ */
+var enemy = 100;
+var attack;
+var AttackMax = 30;
+var count = 0;
+
+window.alert('戦闘スタート！');
+while (enemy > 0) {
+	attack = Math.floor(Math.random() * AttackMax) + 1;
+	enemy -= attack;
+	console.log('モンスターに' + attack + 'のダメージ！' + '\t: enemy_life = ' + enemy);
+	count++;
+}
+console.log(count + '回でモンスターを倒した！');
+</script>
+</body>
+</html>
